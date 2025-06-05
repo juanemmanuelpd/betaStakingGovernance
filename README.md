@@ -41,17 +41,15 @@ A staking app with two strategies to invert, fixed strategy and community strate
 * `testStakingTokenCorrectlyDeployed()` -> Verify that the "Staking Token" contract deployed correctly.
 * `testStakingAppCorrectlyDeployed()` -> Verify that the "Staking App" contract deployed correctly.
 * `testShouldRevertIfNotOwner()` -> The contract reverts if not owner who modify the staking period.
-* `testShouldModifyStakingPeriod()` -> Verify that the staking period be modify correctly by owner.
+* `testShouldCanVoteToModifyStakingPeriod()` ->
+* `testShouldRevertIfStakingPeriodProposalIsIncorrect()` ->
+* `testShouldCanVoteToModifyStakingAmount()` ->
+* `testShouldRevertIfStakingAmountProposalIsIncorrect()` ->
+* `testVotingToModifyStakingPeriodFinalizeCorrectly()` ->
+* `testVotingToModifyStakingAmountFinalizeCorrectly()` -> 
 * `testContractReceivesEthCorrectly()` -> Verify that the owner can deposit ETH correctly to this staking smart contract.
-* `testIncorrectAmountShouldRevert()` -> Verify that user only deposit the definite quantity of ETH to staking.
-* `testDepositTokenCorrectly()` -> Verify that update correctly the balance and period in staking of the user when deposit ETH.
-* `testUserCanNotDepositMoreThanOnce()` -> Verify that nobody can deposit two or more times the definite quantity ETH.
-* `testCanOnlyWithdraw0WithoutDeposit()` -> Verify that nobody can withdraw if not deposited yet.
-* `testWithdrawTokensCorrectly()` -> Verify that users can withdraw tokens correctly before or after time staking period.
-* `testCanNotClaimIfNotStaking()` -> Verify that nobody can claim rewards if not staking.
-* `testCanNotClaimIfNotElapsedTime()` -> Verify that nobody can claim rewards if the staking period not ends.
-* `testShouldRevertIfNotEth()` -> Verify that smart contract reverts if not enough ETH to give rewards.
-* `testCanClaimRewardsCorrectly()` -> Verificar que los usuarios puedan reclamar recompensas correctamente.
+* `testParticipatedFixedStrategyCorrectly()` ->
+* `testParticipatedCommunityStrategyCorrectly()` ->
 
 CODE IS LAW!
 

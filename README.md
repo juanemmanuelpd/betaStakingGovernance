@@ -25,16 +25,16 @@ A staking app with two strategies to invert, fixed strategy and community strate
 ## Functions (Staking Token) 💻
 * `mint()` -> Mints tokens for can stake it.
 ## Functions (Staking App) 📱
-* `modifyCommunityStaking()` -> Modify the time to lock your tokens and receive rewards.
-* `voteToModifyStakingPeriod()` -> Modify the time to lock your tokens and receive rewards.
-* `voteToModifyStakingAmount()` -> Modify the time to lock your tokens and receive rewards.
-* `finalizedVoting()` -> Modify the time to lock your tokens and receive rewards.
-* `viewStrategiesValues()` -> Modify the time to lock your tokens and receive rewards.
-* `participateInFixedStrategy()` -> Deposit a definite tokens to staking.
-* `participateInCommunityStrategy()` -> Deposit a definite tokens to staking.
+* `modifyCommunityStaking()` -> The owner initiates a vote to modify the period and amount in the community strategy.
+* `voteToModifyStakingPeriod()` -> Users can vote to change the staking period value. Only values ​​of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, and 12 (months) are valid.
+* `voteToModifyStakingAmount()` -> Users can vote to change the staking amount. Only 5, 25, 50, and 100 (ether) are valid.
+* `finalizedVoting()` -> The owner ends the vote to modify the community strategy values.
+* `viewStrategiesValues()` -> Allows you to view the values ​​of fixedStakingPeriod, fixedStakingAmount, fixedRewardPerPeriod, communityStakingPeriod, communityStakingAmount, communityRewardPerPeriod.
+* `participateInFixedStrategy()` -> The user enters his ether to perform staking with the values ​​set by the owner.
+* `participateInCommunityStrategy()` -> The user enters his ether to perform staking with the values ​​set by the community
 * `withdrawTokens()` -> Withdraw all yours tokens in staking.
-* `claimRewardsFixedStrategy()` -> Claim the rewards for staking in the definite time.
-* `claimRewardsCommunityStrategy()` -> Claim the rewards for staking in the definite time.
+* `claimRewardsFixedStrategy()` -> Claim your rewards in the fixed staking strategy.
+* `claimRewardsCommunityStrategy()` -> Claim your rewards in the community staking strategy.
 * `receive()` -> The admin enter to the smart contract the tokens that will be using to rewards the users for staking.
 ## Testing functions (Unit testing) ⌨️
 * `testStakingTokenMintsCorrectly()` ->  Verify that mints the correct quantity of token.

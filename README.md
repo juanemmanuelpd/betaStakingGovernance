@@ -41,15 +41,15 @@ A staking app with two strategies to invert, fixed strategy and community strate
 * `testStakingTokenCorrectlyDeployed()` -> Verify that the "Staking Token" contract deployed correctly.
 * `testStakingAppCorrectlyDeployed()` -> Verify that the "Staking App" contract deployed correctly.
 * `testShouldRevertIfNotOwner()` -> The contract reverts if not owner who modify the staking period.
-* `testShouldCanVoteToModifyStakingPeriod()` ->
-* `testShouldRevertIfStakingPeriodProposalIsIncorrect()` ->
-* `testShouldCanVoteToModifyStakingAmount()` ->
-* `testShouldRevertIfStakingAmountProposalIsIncorrect()` ->
-* `testVotingToModifyStakingPeriodFinalizeCorrectly()` ->
-* `testVotingToModifyStakingAmountFinalizeCorrectly()` -> 
+* `testShouldCanVoteToModifyStakingPeriod()` -> Verify that the user can vote for a new staking period.
+* `testShouldRevertIfStakingPeriodProposalIsIncorrect()` -> Verify that the user does not vote for an incorrect staking period.
+* `testShouldCanVoteToModifyStakingAmount()` -> Verify that the user can vote for a new staking amount.
+* `testShouldRevertIfStakingAmountProposalIsIncorrect()` -> Verify that the user does not vote for an incorrect staking amount.
+* `testVotingToModifyStakingPeriodFinalizeCorrectly()` -> Verify that the voting for the new staking period has been carried out successfully.
+* `testVotingToModifyStakingAmountFinalizeCorrectly()` -> Verify that the vote on the new staking amount has been successfully completed.
 * `testContractReceivesEthCorrectly()` -> Verify that the owner can deposit ETH correctly to this staking smart contract.
-* `testParticipatedFixedStrategyCorrectly()` ->
-* `testParticipatedCommunityStrategyCorrectly()` ->
+* `testParticipatedFixedStrategyCorrectly()` -> Verify any user can stake correctly in the fixed strategy.
+* `testParticipatedCommunityStrategyCorrectly()` -> Verify any user can stake correctly in the community strategy.
 
 CODE IS LAW!
 

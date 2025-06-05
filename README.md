@@ -3,6 +3,8 @@
 A staking app with two strategies to invert, fixed strategy and community strategy.
 ## Features 📃
 * Create your own token ERC-20.
+* Participate in a fixed strategy to invest only the agreed amount.
+* Participate in a community strategy to invest in the amount and period agreed upon by the community.
 * Deposit your tokens to staking and withdraws it when the period ends.
 * Claim rewards for staking.
 ## Technical details ⚙️
@@ -23,10 +25,16 @@ A staking app with two strategies to invert, fixed strategy and community strate
 ## Functions (Staking Token) 💻
 * `mint()` -> Mints tokens for can stake it.
 ## Functions (Staking App) 📱
-* `modifyStakingPeriod()` -> Modify the time to lock your tokens and receive rewards.
-* `depositTokens()` -> Deposit a definite tokens to staking.
+* `modifyCommunityStaking()` -> Modify the time to lock your tokens and receive rewards.
+* `voteToModifyStakingPeriod()` -> Modify the time to lock your tokens and receive rewards.
+* `voteToModifyStakingAmount()` -> Modify the time to lock your tokens and receive rewards.
+* `finalizedVoting()` -> Modify the time to lock your tokens and receive rewards.
+* `viewStrategiesValues()` -> Modify the time to lock your tokens and receive rewards.
+* `participateInFixedStrategy()` -> Deposit a definite tokens to staking.
+* `participateInCommunityStrategy()` -> Deposit a definite tokens to staking.
 * `withdrawTokens()` -> Withdraw all yours tokens in staking.
-* `claimRewards()` -> Claim the rewards for staking in the definite time.
+* `claimRewardsFixedStrategy()` -> Claim the rewards for staking in the definite time.
+* `claimRewardsCommunityStrategy()` -> Claim the rewards for staking in the definite time.
 * `receive()` -> The admin enter to the smart contract the tokens that will be using to rewards the users for staking.
 ## Testing functions (Unit testing) ⌨️
 * `testStakingTokenMintsCorrectly()` ->  Verify that mints the correct quantity of token.

@@ -4,6 +4,7 @@ A staking app with two strategies to invert, fixed strategy and community strate
 ## Features 📃
 * Create your own token ERC-20.
 * Participate in a fixed strategy to invest only the agreed amount.
+* All users can vote to modify the staking period and staking amount of the community strategy.
 * Participate in a community strategy to invest in the amount and period agreed upon by the community.
 * Deposit your tokens to staking and withdraws it when the period ends.
 * Claim rewards for staking.
